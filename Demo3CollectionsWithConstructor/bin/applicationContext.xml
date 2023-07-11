@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="question" class="com.Question">
+
+        <constructor-arg value="1"></constructor-arg>
+
+        <constructor-arg value="What is Java?"></constructor-arg>
+
+        <constructor-arg>
+            <list>
+                <value>Java is Object-Oriented</value>
+                <value>Java supports Inheritance</value>
+                <value>Java has Garbage Collection</value>
+                <value>Java provides Multithreading</value>
+                <value>Java offers Exception Handling</value>
+            </list>
+        </constructor-arg>
+
+        <constructor-arg>
+            <set>
+                <value>111</value>
+                <value>222</value>
+                <value>333</value>
+                <value>444</value>
+                <value>555</value>
+            </set>
+        </constructor-arg>
+
+    </bean>
+
+</beans>
